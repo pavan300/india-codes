@@ -1,0 +1,68 @@
+
+చెల్లు = 5
+సందర్భం = True
+if సందర్భం:
+    print("చెల్లు:", చెల్లు)
+    print("సందర్భం:", సందర్భం)
+else:
+    print("False: exceptు")
+
+
+సంఖ్యలు = [1, 2, 3, 4, 5]
+మొత్తం = 0
+for సంఖ్య in సంఖ్యలు:
+    మొత్తం += సంఖ్య
+print("సంఖ్యల మొత్తం:", మొత్తం)
+
+
+కౌంట్ = 10
+for సంఖ్య in range(కౌంట్):
+    print(కౌంట్)
+    కౌంట్ += 1
+
+
+class నావర్గము:
+    సందేశం = "ఇది ఒక class"
+    def print_సందేశం(సందేశం):
+        print(సందేశం)
+
+
+పథం = "/class/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
+try:
+    with open(పథం) as ఫైల్:
+        pass
+except:
+    print("ఫైల్ కనుగొనబడలేదు")
+
+
+variable= 5
+condition = నిజం
+ఐతే condition:
+    ముద్రించు("Variable:", variable)
+    ముద్రించు("Condition:", condition)
+లేదా:
+    ముద్రించు("అబద్ధం: లోcలేదాrect")
+
+numbers = [1, 2, 3, 4, 5]
+total = 0
+ప్రతి num లో numbers:
+    total += num
+    ముద్రించు("Sum of numbers:", total)
+
+count = 10
+ప్రతి num లో శ్రేణి(count):
+    ముద్రించు(num)
+    count += 1
+    
+
+వర్గం MyClలాs:
+    message= "Thఉందా ఉందా a వర్గం"
+    నిర్వచనం ముద్రించు_message(self):
+        ముద్రించు(self.message)
+
+path = "/వర్గం/example/path/file.txt"
+ప్రయత్నించు:
+    తో open(path) లా file:
+        కానివ్వు
+తప్ప:
+    ముద్రించు("File కాదు found")
