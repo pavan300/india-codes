@@ -74,6 +74,87 @@ python convert_to_english.py --script test_scripts/eng_python_code.py --lang pyt
 
 The `quick_test.py` script provides a function `test_python_function` to test the translation functionality by converting sample code snippets between English and Telugu. You can modify this script to add your own test cases.
 
+## Example
+
+Python code in Telugu.
+```
+చెల్లు = 5
+సందర్భం = నిజం
+ఐతే సందర్భం:
+    ముద్రించు("చెల్లు:", చెల్లు)
+    ముద్రించు("సందర్భం:", సందర్భం)
+లేదా:
+    ముద్రించు("అబద్ధం: తప్పు")
+
+
+సంఖ్యలు = [1, 2, 3, 4, 5]
+మొత్తం = 0
+ప్రతి సంఖ్య లో సంఖ్యలు:
+    మొత్తం += సంఖ్య
+
+ముద్రించు("సంఖ్యల మొత్తం:", మొత్తం)
+
+
+కౌంట్ = 10
+ప్రతి సంఖ్య లో శ్రేణి(కౌంట్):
+    ముద్రించు(కౌంట్)
+    కౌంట్ += 1
+
+
+వర్గం నావర్గము:
+    సందేశం = "ఇది ఒక వర్గం"
+    నిర్వచనం ముద్రించు_సందేశం(సందేశం):
+        ముద్రించు(సందేశం)
+
+
+పథం = "/వర్గం/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
+ప్రయత్నించు:
+    తో open(పథం) లా ఫైల్:
+        కానివ్వు
+తప్ప:
+    ముద్రించు("ఫైల్ కనుగొనబడలేదు")
+```
+
+Converted code.
+```
+చెల్లు = 5
+సందర్భం = True
+if సందర్భం:
+    print("చెల్లు:", చెల్లు)
+    print("సందర్భం:", సందర్భం)
+else:
+    print("అబద్ధం: తప్పు")
+
+
+సంఖ్యలు = [1, 2, 3, 4, 5]
+మొత్తం = 0
+for సంఖ్య in సంఖ్యలు:
+    మొత్తం += సంఖ్య
+
+print("సంఖ్యల మొత్తం:", మొత్తం)
+
+
+కౌంట్ = 10
+for సంఖ్య in range(కౌంట్):
+    print(కౌంట్)
+    కౌంట్ += 1
+
+
+class నావర్గము:
+    సందేశం = "ఇది ఒక వర్గం"
+
+    def print_సందేశం(సందేశం):
+        print(సందేశం)
+
+
+పథం = "/వర్గం/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
+try:
+    with open(పథం) as ఫైల్:
+        pass
+except:
+    print("ఫైల్ కనుగొనబడలేదు")
+```
+
 
 ## Contributing
 
