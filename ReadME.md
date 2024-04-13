@@ -79,7 +79,7 @@ The `quick_test.py` script provides a function `test_python_function` to test th
 Python code in Telugu.
 ```
 చెల్లు = 5
-సందర్భం = నిజం
+సందర్భం = నిజము
 ఐతే సందర్భం:
     ముద్రించు("చెల్లు:", చెల్లు)
     ముద్రించు("సందర్భం:", సందర్భం)
