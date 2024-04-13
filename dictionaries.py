@@ -40,7 +40,108 @@ python_ = {
         'ముద్రించు': 'print',
         "ప్రతి": 'for',
         "శ్రేణి": 'range'
+    },
+    "Tamil": {
+
+    },
+    "Kannada": {
+
+    },
+    "Malayalam": {
+
+    },
+    "Hindi": {
+
+    },
+    "Bengali": {
+
     }
 }
+
+
+c_ = {
+    "Telugu": {
+
+    },
+    "Tamil": {
+
+    },
+    "Kannada": {
+
+    },
+    "Malayalam": {
+
+    },
+    "Hindi": {
+
+    },
+    "Bengali": {
+
+    }
+}
+
+javascript_ = {
+    "Telugu": {
+
+    },
+    "Tamil": {
+
+    },
+    "Kannada": {
+
+    },
+    "Malayalam": {
+
+    },
+    "Hindi": {
+
+    },
+    "Bengali": {
+
+    }
+}
+
+typescript_ = {
+    "Telugu": {
+
+    },
+    "Tamil": {
+
+    },
+    "Kannada": {
+
+    },
+    "Malayalam": {
+
+    },
+    "Hindi": {
+
+    },
+    "Bengali": {
+
+    }
+}
+
+java_ = {
+    "Telugu": {
+
+    },
+    "Tamil": {
+
+    },
+    "Kannada": {
+
+    },
+    "Malayalam": {
+
+    },
+    "Hindi": {
+
+    },
+    "Bengali": {
+
+    }
+}
+
 
 # python_eng["Telugu"] = {v: k for k, v in python_["Telugu"].items()}
