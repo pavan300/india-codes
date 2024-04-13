@@ -165,3 +165,7 @@ Contributions are highly welcome! If you want to add support for additional prog
 3. Update the `dictionaries.py` file with the keyword mappings for the new programming and natural language(s)
 4. Test your changes
 5. Submit a pull request
+
+## License
+
+MIT
