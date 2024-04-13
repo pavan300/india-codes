@@ -5,7 +5,7 @@ if సందర్భం:
     print("చెల్లు:", చెల్లు)
     print("సందర్భం:", సందర్భం)
 else:
-    print("False: exceptు")
+    print("అబద్ధం: తప్పు")
 
 
 సంఖ్యలు = [1, 2, 3, 4, 5]
@@ -22,12 +22,12 @@ for సంఖ్య in range(కౌంట్):
 
 
 class నావర్గము:
-    సందేశం = "ఇది ఒక class"
+    సందేశం = "ఇది ఒక వర్గం"
     def print_సందేశం(సందేశం):
         print(సందేశం)
 
 
-పథం = "/class/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
+పథం = "/వర్గం/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
 try:
     with open(పథం) as ఫైల్:
         pass
@@ -41,7 +41,7 @@ condition = నిజం
     ముద్రించు("Variable:", variable)
     ముద్రించు("Condition:", condition)
 లేదా:
-    ముద్రించు("అబద్ధం: లోcలేదాrect")
+    ముద్రించు("False: incorrect")
 
 numbers = [1, 2, 3, 4, 5]
 total = 0
@@ -56,13 +56,13 @@ count = 10
     
 
 వర్గం MyClలాs:
-    message= "Thఉందా ఉందా a వర్గం"
+    message= "This is a class"
     నిర్వచనం ముద్రించు_message(self):
         ముద్రించు(self.message)
 
-path = "/వర్గం/example/path/file.txt"
+path = "/class/example/path/file.txt"
 ప్రయత్నించు:
     తో open(path) లా file:
         కానివ్వు
 తప్ప:
-    ముద్రించు("File కాదు found")
+    ముద్రించు("File not found")

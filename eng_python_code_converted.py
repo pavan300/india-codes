@@ -18,10 +18,10 @@ count = 10
     count += 1
 
 
-వర్గం MyClass:
+వర్గం MyClలాs:
     message = "This is a class"
 
-    నిర్వచనం ముద్రించుmessage(self):
+    నిర్వచనం ముద్రించు_message(self):
         ముద్రించు(self.message)
 
 

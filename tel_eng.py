@@ -3,37 +3,24 @@ import re
 import argparse
 
 
-def translate_code(code, dict_, lang):
-    # lines = code.split("\n")
-    # translated_code = ""
-    # for each_line in lines:
-    #     for each_key in dict_:
-    #         if each_key in each_line:
-    #             each_line = each_line.replace(each_key, dict_[each_key])
-    #     translated_code += each_line + "\n"
-    # return translated_code
-    #
-    #
-    # Create a pattern to match keys from dict_ outside of quotes
-    # pattern = re.compile(r'(?=([^"\']*["\'][^"\']*["\'])*[^"\']*$)(?:\b|_)(' +
-    #                      '|'.join(re.escape(key) for key in dict_) + r')(?:\b|_)')
-    #
-    # # Use re.sub to replace all occurrences of keys with their values
-    # translated_code = pattern.sub(lambda m: dict_[m.group(2)], code)
-    #
-    #
-    #
-    # if lang == "English":
-    #     pattern = re.compile(r'(?=([^"\']*["\'][^"\']*["\'])*[^"\']*$)(?:\b|_)(' +
-    #                          '|'.join(re.escape(key) for key in dict_) + r')(?:\b|_)', re.UNICODE)
-    #     # Use re.sub to replace all occurrences of keys with their values
-    #     translated_code = pattern.sub(lambda m: dict_[m.group(2)], code)
-    #     return translated_code
-    # else:
-    # Create a pattern to match keys from eng2tel
+def translate_code(code, dict_):
+    # Extract code within single and double quotes
+    quoted_code = re.findall(r"'(.*?)'|\"(.*?)\"", code)
+
+    # Remove quoted code from the original code
+    unquoted_code = re.sub(r"'(.*?)'|\"(.*?)\"", "{}", code)
+
+    # Create a pattern to match keys from dict_
     pattern = re.compile(r'|'.join(re.escape(key) for key in dict_))
+
     # Use re.sub to replace all occurrences of keys with their values
-    translated_code = pattern.sub(lambda m: dict_[m.group()], code)
+    translated_code = pattern.sub(lambda m: dict_[m.group()], unquoted_code)
+
+    # Put the quoted code back into the translated code
+    for i, (quote, quoted_text) in enumerate(quoted_code):
+        translated_code = translated_code.replace(
+            "{}", '"' + quote + quoted_text + quote + '"', 1)
+
     return translated_code
 
 
@@ -124,11 +111,10 @@ except:
 
     with open('output.txt', 'w') as f:
         for each in tel_sample_code:
-            print(translate_code(
-                each, tel2eng, "English"), file=f)
+            print(translate_code(each, tel2eng), file=f)
 
         for each in eng_sample_code:
-            print(translate_code(each, eng2tel, "Telugu"), file=f)
+            print(translate_code(each, eng2tel), file=f)
 
     return None
 
@@ -157,4 +143,4 @@ if __name__ == "__main__":
     # print(dict_)
 
     with open(args.out_file, "w") as f:
-        f.write(translate_python_script(args.script_file, dict_, args.lang))
+        f.write(translate_python_script(args.script_file, dict_))
