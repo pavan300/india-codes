@@ -66,7 +66,7 @@ For example, to translate a Python script from English to Telugu:
 
 ```
 bash
-python convert_to_english.py --script test_scripts/eng_python_code.py --lang python --target Telugu --output test_scripts/tel_python_code_converted.py
+python convert_to_english.py --script_file test_scripts/tel_python_code.py --prog_lang python --lang Telugu --out_file test_scripts/tel_python_code_converted.py
 ```
 
 
@@ -101,18 +101,19 @@ Python code in Telugu.
     కౌంట్ += 1
 
 
-వర్గం నావర్గము:
-    సందేశం = "ఇది ఒక వర్గం"
-    నిర్వచనం ముద్రించు_సందేశం(సందేశం):
-        ముద్రించు(సందేశం)
+वर्ग मेरी_कक्षा:
+    संदेश = "यह एक कक्षा है"
+    निर्धारित मुद्र_संदेश(self):
+        मुद्र(self.संदेश)
 
 
-పథం = "/వర్గం/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
-ప్రయత్నించు:
-    తో తెరువు(పథం) లా ఫైల్:
-        కానివ్వు
-తప్ప:
-    ముద్రించు("ఫైల్ కనుగొనబడలేదు")
+पथ = "/कक्षा/उदाहरण/पथ/फ़ाइल.टेक्स्ट"
+प्रयास:
+    साथ खोलें(पथ) जैसा फ़ाइल:
+        चलो
+अपवाद:
+    मुद्र("फ़ाइल नहीं मिली")
+
 ```
 
 Converted code.
@@ -140,19 +141,19 @@ for సంఖ్య in range(కౌంట్):
     కౌంట్ += 1
 
 
-class నావర్గము:
-    సందేశం = "ఇది ఒక వర్గం"
+class मेरी_कक्षा:
+    संदेश = "यह एक कक्षा है"
 
-    def print_సందేశం(సందేశం):
-        print(సందేశం)
+    def print_संदेश(self):
+        print(self.संदेश)
 
 
-పథం = "/వర్గం/ఉదాహరణ/పథం/ఫైల్.టెక్స్ట్"
+पथ = "/कक्षा/उदाहरण/पथ/फ़ाइल.टेक्स्ट"
 try:
-    with open(పథం) as ఫైల్:
+    with open(पथ) as फ़ाइल:
         pass
 except:
-    print("ఫైల్ కనుగొనబడలేదు")
+    print("फ़ाइल नहीं मिली")
 ```
 
 
