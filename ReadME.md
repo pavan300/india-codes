@@ -5,8 +5,13 @@ This repository targets individuals in India who lack English proficiency and pr
 ## Features
 
 - Translate individual code snippets or entire script files
-- Support for multiple programming languages (currently only Python)
-- Support for multiple natural languages (currently only Telugu)
+- Support for multiple programming languages
+- Support for multiple natural languages
+- Currently supported languages:
+  - Programming languages
+    - Python
+  - Natural languages
+    - Telugu 
 
 1. Clone the repository:
 
