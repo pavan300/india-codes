@@ -54,7 +54,7 @@ Every language has their own set of keywords. All (major) programming languages 
 ```
 bash
 
-python convert_to_english.py --script <script_file> --lang <programming_language> --target <target_language> --output <output_file>
+python .\convert_to_english.py --script_file <script_file> --prog_lang <programming_language> --lang <target_language> --output <output_file>
 
 - `<script_file>`: Path to the script file you want to translate
 - `<programming_language>`: Programming language of the script file (e.g., python). All small letters.
