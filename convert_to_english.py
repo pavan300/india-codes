@@ -1,4 +1,4 @@
-from dictionaries import python_
+from dictionaries import python_,java_
 import re
 import argparse
 
@@ -25,7 +25,7 @@ def translate_code_one2one(code, dict_):
 
 
 def translate_script(script_path, eng2tel):
-    code = open(script_path, "r").read()
+    code = open(script_path, "r",encoding="utf-8").read()
     return translate_code_one2one(code, eng2tel)
 
 
@@ -50,6 +50,9 @@ if __name__ == "__main__":
     if args.prog_lang == "python":
         dict_ = python_[args.lang]
     # print(dict_)
+    if args.prog_lang == "java":
+        dict_ = java_[args.lang]
+    
 
     with open(args.out_file, "w") as f:
         f.write(translate_script(args.script_file, dict_))
